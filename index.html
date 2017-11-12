@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <title>travel</title>
+    <style> 
+	*{
+		margin:0 auto;
+		padding:0;
+	}
+	
+		
+        img{
+            width:100%;
+			height:auto;
+        }
+    </style>
+</head>
+<body>
+	
+	<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+
+		<div data-ride="carousel" class="carousel slide" id="carousel-container">
+		
+			<!--放置图片容器 -->
+			<div class="carousel-inner ">
+				<div class="item active" ><img src="./images/FujiMountain.jpg" alt="日本富士山" /></div>
+				<div class="item "><img src="./images/Maldives.jpg"alt="马尔代夫" /></div>
+				<div class="item"><img src="./images/Paris.jpg" alt="法国巴黎" /></div>
+				<div class="item"><img src="./images/Rome.jpg" alt="罗马" /></div>
+				<div class="item"><img src="./images/Switzerland.jpg" alt="瑞士" /></div>
+				<div class="item"><img src="./images/Ukraine.jpg" alt="乌克兰" /></div>
+			</div>
+			
+			<!--放置圆点 -->
+			<ol class="carousel-indicators">
+				<li data-slide-to="0" data-target="#carousel-container" class="active"></li>
+				<li data-slide-to="1" data-target="#carousel-container"></li>
+				<li data-slide-to="2" data-target="#carousel-container"></li>
+				<li data-slide-to="3" data-target="#carousel-container"></li>
+				<li data-slide-to="4" data-target="#carousel-container"></li>
+				<li data-slide-to="5" data-target="#carousel-container" ></li>
+				<li data-slide-to="6" data-target="#carousel-container" ></li>
+			</ol>
+			
+			<!--放置左右箭头 -->
+			<a data-slide="prev" href="#carousel-container" class="left carousel-control">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a data-slide="next" href="#carousel-container" class="right carousel-control">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+			
+		</div>
+	</div>
+</body>
+</html>
